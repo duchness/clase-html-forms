@@ -1,0 +1,146 @@
+:root {
+  --cyan: #4abebd;
+  --cyan-dark: #29afad;
+  --bright: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  background-color: var(--light-gray);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+
+h3,
+h2 {
+  color: var(--light-gray);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container-body,
+.container-header {
+  /* width: 400px; */
+}
+
+.container-header {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  width: 800px;
+}
+
+.container-body {
+  display: flex;
+  justify-content: center;
+}
+
+.login-subscription-info {
+  background-color: var(--cyan-dark);
+  width: 400px;
+  padding: 10px;
+  border-radius: 0 0 0 10px;
+  padding-bottom: 30px;
+}
+
+.login-subscription p,
+h2 {
+  margin: 0;
+  color: var(--light-gray);
+}
+
+.login-subscription-info {
+  padding: 16px;
+}
+
+.form-container {
+  background-color: var(--cyan);
+  width: 400px;
+  padding: 10px;
+  border-radius: 0 0 10px 0;
+}
+
+.btn-login {
+  width: 200px;
+  background-color: var(--bright);
+  color: #fff;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.btn-login:hover {
+  opacity: 0.8;
+}
+
+.btn-login:active {
+  transform: translateY(2px);
+}
+
+small {
+  color: #fff;
+}
+
+h1 {
+  color: var(--cyan-dark);
+}
+
+.container-header p {
+  color: var(--bright);
+  font-weight: bold;
+}
+
+.container-header :last-child {
+  color: var(--grayish-blue);
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-form {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--light-gray);
+  margin-bottom: 10px;
+}
+
+label {
+  color: var(--light-gray);
+}
+
+textarea {
+  font-family: "Karla", sans-serif;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+}
